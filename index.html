@@ -1,117 +1,390 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elegant King Dog: entrenamiento canino profesional, obediencia y educación para perros.">
   <title>Elegant King Dog | Entrenamiento Canino</title>
-  <link rel="stylesheet" href="style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Navegación -->
-  <header>
-    <div class="logo">
-      <h1>Elegant King Dog 🐾</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#programas">Programas</a></li>
-        <li><a href="#evaluador">Test de Nivel</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <a href="#inicio" class="logo">
+      <span class="logo-icon">♛</span>
+      <span>ELEGANT <strong>KING DOG</strong></span>
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#programas">Programas</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto" class="nav-button">Contáctanos</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="inicio" class="hero">
-    <div class="hero-content">
-      <h2>Transforma la convivencia con tu perro</h2>
-      <p>Entrenamiento profesional adaptado a cada etapa y necesidad: Básico, Intermedio y Avanzado.</p>
-      <a href="#programas" class="btn">Ver Programas</a>
-    </div>
-  </section>
+  <main>
 
-  <!-- Programas -->
-  <section id="programas" class="section">
-    <h2>Nuestros Programas de Entrenamiento</h2>
-    <div class="cards-container">
-      
-      <div class="card">
-        <div class="badge">Nivel 1</div>
-        <h3>Entrenamiento Básico</h3>
-        <p>Enfoque en obediencia primaria, hábitos en casa, control de esfínteres y socialización temprana.</p>
-        <ul>
-          <li>✔️ Sentado, Echado, Junto</li>
-          <li>✔️ Caminata sin jalar correa</li>
-          <li>✔️ Corrección de conductas destructivas</li>
-        </ul>
+    <!-- INICIO -->
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <span class="eyebrow">EXCELENCIA EN EDUCACIÓN CANINA</span>
+        <h1>Un perro educado,<br>una vida <span>extraordinaria.</span></h1>
+
+        <p>
+          Construimos una relación de confianza, respeto y disciplina
+          entre tú y tu mejor amigo.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#programas" class="btn btn-gold">Descubre nuestros programas</a>
+          <a href="#nosotros" class="btn btn-outline">Conócenos</a>
+        </div>
       </div>
 
-      <div class="card destacada">
-        <div class="badge">Nivel 2</div>
-        <h3>Entrenamiento Intermedio</h3>
-        <p>Perfeccionamiento de la atención con distracciones reales y respuesta rápida al llamado.</p>
-        <ul>
-          <li>✔️ Llamado a distancia sin correa</li>
-          <li>✔️ Permanencia prolongada</li>
-          <li>✔️ Socialización en entornos urbanos</li>
-        </ul>
+      <div class="hero-bottom">
+        <span>ENTRENAMIENTO · DISCIPLINA · CONFIANZA</span>
+        <span>EST. 2026</span>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section about" id="nosotros">
+      <div class="about-image">
+        <img
+          src="https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=900&q=85"
+          alt="Perro disfrutando de una sesión de entrenamiento">
+        <div class="image-label">
+          <span>♛</span>
+          <p>Educación con propósito</p>
+        </div>
       </div>
 
-      <div class="card">
-        <div class="badge">Nivel 3</div>
-        <h3>Entrenamiento Avanzado</h3>
-        <p>Trabajo técnico de alta precisión, protección familiar controlada y agilidad superior.</p>
-        <ul>
-          <li>✔️ Obediencia avanzada sin correa</li>
-          <li>✔️ Protección y guardia estructurada</li>
-          <li>✔️ Razonamiento y ejercicios de agilidad</li>
-        </ul>
+      <div class="about-content">
+        <span class="eyebrow">QUIÉNES SOMOS</span>
+        <h2>Más que entrenamiento, creamos <span>conexiones.</span></h2>
+
+        <p>
+          En Elegant King Dog creemos que cada perro tiene un potencial
+          extraordinario. Nuestro objetivo es ayudar a desarrollar sus
+          habilidades mediante educación, constancia y comunicación.
+        </p>
+
+        <p>
+          Buscamos que cada mascota aprenda a comportarse adecuadamente,
+          fortalezca su confianza y disfrute una mejor convivencia con
+          su familia.
+        </p>
+
+        <div class="values">
+          <div>
+            <span>01</span>
+            <strong>Respeto</strong>
+            <p>Entendemos las necesidades de cada perro.</p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <strong>Disciplina</strong>
+            <p>Fomentamos hábitos y conductas positivas.</p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <strong>Confianza</strong>
+            <p>Fortalecemos el vínculo entre perro y dueño.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section services" id="servicios">
+      <div class="section-heading">
+        <span class="eyebrow">NUESTROS SERVICIOS</span>
+        <h2>Educación para cada <span>necesidad.</span></h2>
+        <p>Programas enfocados en desarrollar el mejor comportamiento de tu mascota.</p>
       </div>
 
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">🐕</div>
+          <h3>Obediencia canina</h3>
+          <p>Enseñanza de órdenes fundamentales para una convivencia equilibrada.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🏆</div>
+          <h3>Educación avanzada</h3>
+          <p>Desarrollo de habilidades, autocontrol y obediencia ante distracciones.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🐾</div>
+          <h3>Socialización</h3>
+          <p>Mejora de la interacción con personas, otros perros y diferentes ambientes.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">⭐</div>
+          <h3>Agilidad canina</h3>
+          <p>Actividades físicas y mentales que estimulan las capacidades de tu perro.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROGRAMAS -->
+    <section class="section programs" id="programas">
+      <div class="section-heading">
+        <span class="eyebrow">NUESTROS PROGRAMAS</span>
+        <h2>Tres niveles. Un mismo <span>objetivo.</span></h2>
+        <p>Elige el programa de acuerdo con las necesidades y habilidades de tu mascota.</p>
+      </div>
+
+      <div class="program-grid">
+
+        <article class="program-card">
+          <div class="program-number">01</div>
+          <span class="level">NIVEL BÁSICO</span>
+          <h3>Primeros pasos</h3>
+          <p>Ideal para perros que comienzan su educación.</p>
+
+          <ul>
+            <li>✓ Sentado y echado</li>
+            <li>✓ Aprendizaje de órdenes básicas</li>
+            <li>✓ Hábitos dentro del hogar</li>
+            <li>✓ Paseos con correa</li>
+            <li>✓ Socialización inicial</li>
+          </ul>
+
+          <a href="#contacto" class="program-link">Solicitar información →</a>
+        </article>
+
+        <article class="program-card featured">
+          <div class="popular">RECOMENDADO</div>
+          <div class="program-number">02</div>
+          <span class="level">NIVEL INTERMEDIO</span>
+          <h3>Control y equilibrio</h3>
+          <p>Para perros que conocen órdenes básicas y quieren avanzar.</p>
+
+          <ul>
+            <li>✓ Obediencia con distracciones</li>
+            <li>✓ Mejor respuesta al llamado</li>
+            <li>✓ Permanencia y autocontrol</li>
+            <li>✓ Paseos controlados</li>
+            <li>✓ Socialización avanzada</li>
+          </ul>
+
+          <a href="#contacto" class="program-link">Solicitar información →</a>
+        </article>
+
+        <article class="program-card">
+          <div class="program-number">03</div>
+          <span class="level">NIVEL AVANZADO</span>
+          <h3>Alto rendimiento</h3>
+          <p>Para perros preparados para nuevos desafíos.</p>
+
+          <ul>
+            <li>✓ Obediencia avanzada</li>
+            <li>✓ Ejercicios de precisión</li>
+            <li>✓ Autocontrol en situaciones complejas</li>
+            <li>✓ Agilidad y coordinación</li>
+            <li>✓ Trabajo a distancia supervisado</li>
+          </ul>
+
+          <a href="#contacto" class="program-link">Solicitar información →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="benefits">
+      <div class="benefits-content">
+        <span class="eyebrow">NUESTRA FILOSOFÍA</span>
+        <h2>La mejor inversión es una convivencia <span>feliz.</span></h2>
+        <p>
+          La educación canina no consiste solamente en enseñar órdenes.
+          También significa comprender, comunicar y construir confianza.
+        </p>
+
+        <div class="benefit-list">
+          <p>✓ Mejor comunicación con tu mascota.</p>
+          <p>✓ Mayor seguridad durante los paseos.</p>
+          <p>✓ Hábitos saludables y positivos.</p>
+          <p>✓ Una convivencia más armoniosa.</p>
+        </div>
+
+        <a href="#contacto" class="btn btn-gold">Comienza hoy</a>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section gallery" id="galeria">
+      <div class="section-heading">
+        <span class="eyebrow">GALERÍA</span>
+        <h2>Momentos que reflejan <span>excelencia.</span></h2>
+        <p>El aprendizaje también está lleno de grandes momentos.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=700&q=85" alt="Golden retriever">
+        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=700&q=85" alt="Perro disfrutando al aire libre">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=700&q=85" alt="Perro de compañía">
+        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=700&q=85" alt="Perro en primer plano">
+      </div>
+    </section>
+
+    <!-- EVALUADOR -->
+    <section class="section evaluator" id="evaluador">
+      <div class="section-heading">
+        <span class="eyebrow">EVALUADOR INTERACTIVO</span>
+        <h2>¿Qué nivel necesita <span>tu perro?</span></h2>
+        <p>Responde esta pregunta y descubre qué programa podría ser adecuado.</p>
+      </div>
+
+      <div class="evaluator-box">
+        <label for="necesidad">¿Cuál describe mejor la situación de tu perro?</label>
+
+        <select id="necesidad">
+          <option value="">Selecciona una opción</option>
+          <option value="basico">Está aprendiendo órdenes y hábitos básicos.</option>
+          <option value="intermedio">Conoce órdenes, pero se distrae fácilmente.</option>
+          <option value="avanzado">Tiene experiencia y quiero desarrollar habilidades avanzadas.</option>
+        </select>
+
+        <button class="btn btn-gold full-btn" id="btn-evaluar">
+          Descubrir mi recomendación
+        </button>
+
+        <div id="resultado" class="result-box hidden" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="section faq">
+      <div class="section-heading">
+        <span class="eyebrow">PREGUNTAS FRECUENTES</span>
+        <h2>Resolvemos tus <span>dudas.</span></h2>
+      </div>
+
+      <div class="faq-container">
+        <details>
+          <summary>¿A qué edad puede comenzar un perro a entrenar?</summary>
+          <p>Los perros pueden comenzar a aprender desde cachorros, adaptando los ejercicios a su edad y desarrollo.</p>
+        </details>
+
+        <details>
+          <summary>¿Cuánto tiempo tarda el entrenamiento?</summary>
+          <p>Depende de la edad, experiencia, necesidades y constancia de cada perro. El aprendizaje requiere práctica continua.</p>
+        </details>
+
+        <details>
+          <summary>¿Todos los perros pueden aprender?</summary>
+          <p>Sí. Cada perro tiene su propio ritmo de aprendizaje y los ejercicios deben adaptarse a sus capacidades.</p>
+        </details>
+
+        <details>
+          <summary>¿Qué necesito para comenzar?</summary>
+          <p>Conocer las necesidades de tu mascota y tener disposición para participar en su proceso educativo.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact" id="contacto">
+      <div class="section-heading">
+        <span class="eyebrow">CONTACTO</span>
+        <h2>Comienza una nueva etapa con <span>tu mejor amigo.</span></h2>
+        <p>Cuéntanos sobre tu perro y qué te gustaría mejorar.</p>
+      </div>
+
+      <form id="form-contacto" class="contact-form">
+        <div class="form-row">
+          <div>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Tu nombre" required>
+          </div>
+
+          <div>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" placeholder="correo@ejemplo.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label for="perro">Nombre de tu perro</label>
+            <input type="text" id="perro" placeholder="Nombre de tu mascota" required>
+          </div>
+
+          <div>
+            <label for="edad">Edad de tu perro</label>
+            <input type="text" id="edad" placeholder="Ej. 2 años" required>
+          </div>
+        </div>
+
+        <div>
+          <label for="programa">Programa de interés</label>
+          <select id="programa" required>
+            <option value="">Selecciona un programa</option>
+            <option value="Básico">Básico</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Avanzado">Avanzado</option>
+            <option value="No estoy seguro">Necesito orientación</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="mensaje">Cuéntanos qué necesitas</label>
+          <textarea id="mensaje" rows="5" placeholder="Escribe aquí tu consulta..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold full-btn">Enviar consulta</button>
+
+        <div id="mensaje-confirmacion" class="result-box hidden" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <a href="#inicio" class="logo footer-logo">
+      <span class="logo-icon">♛</span>
+      <span>ELEGANT <strong>KING DOG</strong></span>
+    </a>
+
+    <p>Educación, confianza y excelencia canina.</p>
+
+    <div class="footer-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#programas">Programas</a>
+      <a href="#contacto">Contacto</a>
     </div>
-  </section>
 
-  <!-- Funcionalidad interactiva: Evaluador -->
-  <section id="evaluador" class="section evaluador-section">
-    <h2>¿Qué nivel necesita tu perro?</h2>
-    <p>Selecciona la conducta o meta principal para saber qué programa se adapta mejor:</p>
-    
-    <div class="evaluador-box">
-      <label for="necesidad">Selecciona la situación actual de tu mascota:</label>
-      <select id="necesidad">
-        <option value="">-- Selecciona una opción --</option>
-        <option value="basico">No me hace caso, muerde muebles o se orina adentro</option>
-        <option value="intermedio">Conoce órdenes sencillas pero se distrae mucho en la calle</option>
-        <option value="avanzado">Busco obediencia perfecta sin correa o trabajo de protección</option>
-      </select>
-
-      <button id="btn-evaluar" class="btn">Calcular Nivel Recomendado</button>
-
-      <div id="resultado" class="resultado-box hidden"></div>
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contacto" class="section contacto-section">
-    <h2>Contacto y Citas</h2>
-    <form id="form-contacto">
-      <input type="text" id="nombre" placeholder="Tu nombre completo" required>
-      <input type="email" id="correo" placeholder="Tu correo electrónico" required>
-      <input type="text" id="perro" placeholder="Nombre y raza de tu perro" required>
-      <textarea id="mensaje" rows="4" placeholder="Cuéntanos más sobre lo que buscas mejorar..." required></textarea>
-      <button type="submit" class="btn">Enviar Consulta</button>
-    </form>
-    <div id="mensaje-confirmacion" class="resultado-box hidden"></div>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Elegant King Dog. Todos los derechos reservados.</p>
+    <p class="copyright">
+      © 2026 Elegant King Dog. Todos los derechos reservados.
+    </p>
   </footer>
+
+  <button id="back-to-top" aria-label="Volver arriba">↑</button>
 
   <script src="script.js"></script>
 </body>
