@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant King Dog | Entrenamiento Canino</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <header>
+    <div class="logo">
+      <h1>Elegant King Dog 🐾</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#programas">Programas</a></li>
+        <li><a href="#evaluador">Test de Nivel</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h2>Transforma la convivencia con tu perro</h2>
+      <p>Entrenamiento profesional adaptado a cada etapa y necesidad: Básico, Intermedio y Avanzado.</p>
+      <a href="#programas" class="btn">Ver Programas</a>
+    </div>
+  </section>
+
+  <!-- Programas -->
+  <section id="programas" class="section">
+    <h2>Nuestros Programas de Entrenamiento</h2>
+    <div class="cards-container">
+      
+      <div class="card">
+        <div class="badge">Nivel 1</div>
+        <h3>Entrenamiento Básico</h3>
+        <p>Enfoque en obediencia primaria, hábitos en casa, control de esfínteres y socialización temprana.</p>
+        <ul>
+          <li>✔️ Sentado, Echado, Junto</li>
+          <li>✔️ Caminata sin jalar correa</li>
+          <li>✔️ Corrección de conductas destructivas</li>
+        </ul>
+      </div>
+
+      <div class="card destacada">
+        <div class="badge">Nivel 2</div>
+        <h3>Entrenamiento Intermedio</h3>
+        <p>Perfeccionamiento de la atención con distracciones reales y respuesta rápida al llamado.</p>
+        <ul>
+          <li>✔️ Llamado a distancia sin correa</li>
+          <li>✔️ Permanencia prolongada</li>
+          <li>✔️ Socialización en entornos urbanos</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="badge">Nivel 3</div>
+        <h3>Entrenamiento Avanzado</h3>
+        <p>Trabajo técnico de alta precisión, protección familiar controlada y agilidad superior.</p>
+        <ul>
+          <li>✔️ Obediencia avanzada sin correa</li>
+          <li>✔️ Protección y guardia estructurada</li>
+          <li>✔️ Razonamiento y ejercicios de agilidad</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Funcionalidad interactiva: Evaluador -->
+  <section id="evaluador" class="section evaluador-section">
+    <h2>¿Qué nivel necesita tu perro?</h2>
+    <p>Selecciona la conducta o meta principal para saber qué programa se adapta mejor:</p>
+    
+    <div class="evaluador-box">
+      <label for="necesidad">Selecciona la situación actual de tu mascota:</label>
+      <select id="necesidad">
+        <option value="">-- Selecciona una opción --</option>
+        <option value="basico">No me hace caso, muerde muebles o se orina adentro</option>
+        <option value="intermedio">Conoce órdenes sencillas pero se distrae mucho en la calle</option>
+        <option value="avanzado">Busco obediencia perfecta sin correa o trabajo de protección</option>
+      </select>
+
+      <button id="btn-evaluar" class="btn">Calcular Nivel Recomendado</button>
+
+      <div id="resultado" class="resultado-box hidden"></div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section contacto-section">
+    <h2>Contacto y Citas</h2>
+    <form id="form-contacto">
+      <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+      <input type="email" id="correo" placeholder="Tu correo electrónico" required>
+      <input type="text" id="perro" placeholder="Nombre y raza de tu perro" required>
+      <textarea id="mensaje" rows="4" placeholder="Cuéntanos más sobre lo que buscas mejorar..." required></textarea>
+      <button type="submit" class="btn">Enviar Consulta</button>
+    </form>
+    <div id="mensaje-confirmacion" class="resultado-box hidden"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Elegant King Dog. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
